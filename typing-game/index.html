@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="settings" id="settings">
+        <label for="difficulty">Type Fast</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button id="start">Start</button>
+    </div>
+
+    <div class="game" id="game">
+        <div class="score-box">
+            <span>Time Left:</span>
+            <span id="time"></span>
+            <span>Score: <span id="score">0</span></span>
+        </div>
+        <div class="game-box">
+            <span id="next-next-word" class="next-word">fool</span>
+            <span id="next-word" class="next-word">idiot</span>
+            <span id="current-word" class="current-word">gullible</span>
+            <input type="text" id="inputField" autocomplete="off">
+        </div>
+        <div class="leaderboard-box" id="gameplay-leaderboard">
+
+        </div>
+    </div>
+
+    <div class="stats" id="stats">
+        <div class="submission">
+            <span>submit yourself</span>
+            <div class="run-stats">
+                <div class="run-stats-details">
+                    <span>score:</span>
+                    <span id="final-score">50</span>
+                </div>
+                <div class="run-stats-details">
+                    <span>chars/s:</span>
+                    <span id="final-cps">50</span>
+                </div>
+            </div>
+            Difficulty: <span id="submission-difficulty"></span>
+            <input type="text" id="submission-name">
+            <button id="submission-button">Submit</button>
+            <button id="submission-try-again">Try Again</button>
+        </div>
+        <div class="leaderboard">
+            <span>leaderboard</span>
+            <div class="leaderboard-box" id="submission-leaderboard">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

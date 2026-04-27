@@ -1,0 +1,11 @@
+https://codepen.io/solygambas/full/wvoOQvq
+
+Build a clone of the typing game from the link above - a web app that shows the user a random word and lets them type it into an input field.
+
+As soon as the user types the word correctly, the input field is cleared and a different random word is displayed.
+
+The game has a countdown timer, so a player has to be fast!
+
+At the end of the game, show the final results: total score and avg chars per second.
+
+Save the total score to an offline leaderboard.
