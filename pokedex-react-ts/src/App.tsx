@@ -19,7 +19,7 @@ function App() {
       </center>
 
       <div className="layout">
-        <div className="list-pane">
+        <div className={"list-pane"}>
           <h1 style={{paddingLeft: 12}}>List</h1>
           <PokemonList
             pokemon={pokemon.filter((p) => p.name.includes(query))}
