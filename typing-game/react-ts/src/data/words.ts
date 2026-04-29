@@ -1,0 +1,53 @@
+export function getRandomUnusedWord(exclude: string[]): string {
+    const unused = WORDS.filter(w => !exclude.includes(w));
+    const index = Math.floor(Math.random() * (unused.length - 1 - 0 + 1)) + 0;
+    return unused[index]
+}
+
+export const WORDS: string[] = [
+    "gullible",
+    "thoughtless",
+    "bravery",
+    "almighty",
+    "omniscience",
+    "operator",
+    "altruistic",
+    "menacing",
+    "population",
+    "refridgerator",
+    "triumph",
+    "choose",
+    "twiddle",
+    "nauseous",
+    "packaging",
+    "twitchy",
+    "especially",
+    "swagger",
+    "pretentious",
+    "vicious",
+    "murder",
+    "speedster",
+    "impervious",
+    "coalescence",
+    "expedition",
+    "terrarium",
+    "melancholy",
+    "conscientous",
+    "constellation",
+    "limited",
+    "breakthrough",
+    "throughput",
+    "sophisticated",
+    "propulsion",
+    "deterministic",
+    "serious",
+    "probable",
+    "components",
+    "bullshit",
+    "trickery",
+    "turnabout",
+    "prosecutor",
+    "defendant",
+    "vytautas",
+    "servitude"
+]
